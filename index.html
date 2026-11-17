@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="পশ্চিমবঙ্গ মধ্যশিক্ষা পর্ষদের বাংলা মাধ্যমের Class 8, 9 ও 10-এর ছাত্রছাত্রীদের জন্য ChatGPT-সহায়ক Self-Study Community।">
+  <title>নিজের পড়া নিজে শিখুন | Self-Study Community</title>
+  <style>
+    :root{--navy:#102a43;--navy2:#183f5d;--gold:#f2bd45;--gold2:#ffdc83;--ink:#172b3a;--muted:#526575;--paper:#fffdf8;--line:#e8e1d4;--green:#176b55}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans Bengali","Hind Siliguri","Nirmala UI",system-ui,sans-serif;line-height:1.75}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--navy);color:#fff;padding:12px 0}
+    .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .brand{font-weight:800;letter-spacing:.2px}.topnote{font-size:13px;color:#e8edf2}
+    .hero{padding:58px 0 54px;background:radial-gradient(circle at 80% 10%,#fff0c7 0,transparent 28%),linear-gradient(135deg,#fffdf8,#f5f0e5)}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center}
+    .eyebrow{display:inline-block;color:var(--navy);background:#fff0c7;border:1px solid #f3d58b;border-radius:99px;padding:5px 14px;font-size:13px;font-weight:700}
+    h1{font-size:clamp(34px,5vw,58px);line-height:1.22;color:var(--navy);margin:18px 0}
+    h1 em{font-style:normal;color:#b47a08}
+    .lead{font-size:clamp(17px,2vw,20px);color:#344b5d;max-width:650px}
+    .hero-image{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;border-radius:22px;box-shadow:0 22px 55px #102a4325;border:7px solid white}
+    .price-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:24px 0 18px}
+    .price{font-size:34px;font-weight:900;color:var(--navy)}
+    .old{color:#71808b;text-decoration:line-through;font-size:18px}
+    .saving{background:#e8f4ef;color:var(--green);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:800}
+    .cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(180deg,#ffdf70,#f4bd36);color:#172b3a;text-decoration:none;font-weight:900;font-size:18px;padding:15px 25px;border-radius:12px;box-shadow:0 5px 0 #c58f1d,0 12px 25px #c58f1d30;transition:transform .15s}
+    .cta:hover{transform:translateY(-2px)}
+    .micro{font-size:13px;color:var(--muted);margin-top:12px}
+    section{padding:68px 0}
+    .section-head{text-align:center;max-width:760px;margin:0 auto 34px}
+    h2{font-size:clamp(27px,3.5vw,39px);line-height:1.3;color:var(--navy);margin:0 0 14px}
+    .section-head p{color:var(--muted);margin:0}
+    .problem{background:#fff}
+    .story{max-width:820px;margin:auto;background:#fffaf0;border:1px solid #f1e2bd;border-radius:18px;padding:28px 32px}
+    .story p{margin:0 0 14px}.story p:last-child{margin-bottom:0}
+    .quote{font-size:21px;font-weight:800;color:var(--navy)}
+    .highlight{color:#9b6800;font-weight:800}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step,.benefit,.audience-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:23px;box-shadow:0 8px 25px #102a4308}
+    .num{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold2);font-weight:900;margin-bottom:12px}
+    .step h3,.benefit h3,.audience-card h3{color:var(--navy);font-size:19px;margin:0 0 8px}
+    .step p,.benefit p,.audience-card p{margin:0;color:var(--muted);font-size:15px}
+    .benefits{background:#f4f0e7}
+    .benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .icon{font-size:26px;margin-bottom:8px}
+    .contrast{background:var(--navy);color:#fff}
+    .contrast h2{color:#fff}
+    .contrast .section-head p{color:#d5e0e8}
+    .compare{width:100%;border-collapse:collapse;background:#fff;color:var(--ink);border-radius:14px;overflow:hidden}
+    .compare th,.compare td{text-align:left;padding:14px 18px;border-bottom:1px solid #e8edf0}
+    .compare th{background:#eaf0f4;color:var(--navy)}
+    .compare tr:last-child td{border-bottom:0}
+    .audience{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .audience-card ul{padding-left:20px;margin:12px 0 0;color:var(--muted)}
+    .offer{background:linear-gradient(135deg,#102a43,#1b4968);color:#fff}
+    .offer h2{color:#fff}
+    .offer-box{max-width:760px;margin:auto;text-align:center;border:1px solid #d7b45e88;background:#ffffff0b;border-radius:22px;padding:36px 28px}
+    .offer-price{font-size:clamp(48px,8vw,76px);font-weight:950;color:var(--gold2);line-height:1.1;margin:8px 0}
+    .offer-box p{color:#e2ebf1}
+    .offer-list{display:flex;justify-content:center;gap:10px 22px;flex-wrap:wrap;margin:20px 0 26px;color:#fff}
+    .join{counter-reset:join;max-width:800px;margin:auto}
+    .join-item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line)}
+    .join-item:last-child{border:0}
+    .join-item b{flex:0 0 34px;height:34px;border-radius:50%;background:#fff0c7;color:var(--navy);display:grid;place-items:center}
+    .faq{background:#f4f0e7}
+    details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 19px;margin:10px 0}
+    summary{font-weight:800;color:var(--navy);cursor:pointer}
+    details p{color:var(--muted);margin-bottom:0}
+    .final{text-align:center;background:#fff}
+    footer{background:#0b2033;color:#d5e0e8;text-align:center;padding:25px 0;font-size:13px}
+    footer a{color:#ffdc83}
+    @media(max-width:800px){.hero-grid{grid-template-columns:1fr;gap:28px}.hero{padding:38px 0}.hero-image{max-height:420px}.steps,.benefit-grid{grid-template-columns:1fr 1fr}.audience{grid-template-columns:1fr}.topnote{display:none}}
+    @media(max-width:540px){section{padding:48px 0}.steps,.benefit-grid{grid-template-columns:1fr}.story{padding:22px 20px}.compare th,.compare td{padding:11px 9px;font-size:14px}.cta{width:100%}.hero-image{border-width:4px;border-radius:15px}.offer-box{padding:28px 18px}}
+  </style>
+</head>
+<body>
+<header class="topbar"><div class="wrap"><div class="brand">নিজের পড়া নিজে শিখুন</div><div class="topnote">Class 8 · Class 9 · Class 10 | বাংলা মাধ্যম</div></div></header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">পশ্চিমবঙ্গের বাংলা মাধ্যমের ছাত্রছাত্রীদের জন্য</span>
+      <h1>নিজের পড়া <em>নিজে শিখুন</em> — ChatGPT-কে সঙ্গে নিয়ে!</h1>
+      <p class="lead">বুঝে পড়ুন, নিজে অনুশীলন করুন, নিজের ভুল শুধরে নিন এবং নিজের উপর বিশ্বাস তৈরি করুন।</p>
+      <p>কঠিন প্রশ্নে আটকে যাচ্ছেন? অঙ্ক করতে গিয়ে বুঝতে পারছেন না পরের ধাপ কী? ChatGPT-কে কাজে লাগিয়ে নিজের পড়াটা নিজেই বুঝতে ও অনুশীলন করতে শিখুন।</p>
+      <div class="price-row"><span class="old">₹৪৯৯</span><span class="price">₹১৯৯</span><span class="saving">প্রাথমিক সদস্যমূল্য</span></div>
+      <a class="cta" href="https://spm.graphy.com/single-checkout/6afbde976251f3d9cf9b521c?pid=p1" target="_blank" rel="noopener noreferrer">এখনই সদস্যপদ নিন — ₹১৯৯</a>
+      <div class="micro">এককালীন পেমেন্ট · Lifetime Membership · কোনও মাসিক ফি নেই</div>
+    </div>
+    <div><img class="hero-image" src="assets/student-study.jpg" alt="বই খুলে পড়াশোনা করার পাশাপাশি মোবাইল ব্যবহার করছে এক ছাত্র"></div>
+  </div>
+</section>
+
+<section class="problem">
+  <div class="wrap">
+    <div class="section-head"><h2>এই সমস্যাটা কি আপনারও চেনা?</h2><p>পড়তে বসেছেন, কিন্তু কোথা থেকে শুরু করবেন বা কীভাবে বুঝবেন—সেটাই পরিষ্কার নয়?</p></div>
+    <div class="story">
+      <p>পরের দিন স্কুলে পরীক্ষার প্রস্তুতি নিয়ে যেতে হবে। রাত হয়ে গিয়েছে। আপনি বই খুলে বসেছেন।</p>
+      <p>একটা অধ্যায় পড়ছেন। কয়েকটা লাইন পড়ার পরেই মনে হচ্ছে, কথাগুলোর মানে ঠিক বুঝতে পারছেন না। বইয়ের প্রশ্নগুলো দেখছেন—উত্তর কীভাবে লিখবেন বুঝতে পারছেন না। অঙ্ক করতে বসে মাঝপথে আটকে গেলেন।</p>
+      <p>বাড়িতে সবসময় কাউকে পাশে পাওয়া যায় না। বন্ধুও হয়তো নিজের পড়া নিয়ে ব্যস্ত। তখন মনে হতে পারে—</p>
+      <p class="quote">“আমি কি সত্যিই নিজের পড়াটা নিজে বুঝে শিখতে পারব না?”</p>
+      <p>সমস্যাটা সবসময় আপনার শেখার ক্ষমতায় নয়। অনেক সময় দরকার হয় বিষয়টি অন্যভাবে বুঝিয়ে দেওয়ার মতো সহায়তা এবং নিজের মতো করে অনুশীলনের সুযোগ।</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>পড়ার সময় ChatGPT-কে কীভাবে কাজে লাগাবেন?</h2><p>শুধু উত্তর জেনে নেওয়া নয়—বুঝে নেওয়া, নিজে চেষ্টা করা এবং ভুল থেকে শেখাই আমাদের পদ্ধতি।</p></div>
+    <div class="steps">
+      <article class="step"><div class="num">১</div><h3>বিষয়টি বুঝে নিন</h3><p>যে অংশ বুঝতে অসুবিধা হচ্ছে, ChatGPT-কে সহজ বাংলায় ধাপে ধাপে বুঝিয়ে দিতে বলুন।</p></article>
+      <article class="step"><div class="num">২</div><h3>নিজে অনুশীলন করুন</h3><p>প্রশ্নের উত্তর নিজে লিখুন বা অঙ্ক নিজে সমাধান করুন। আটকে গেলে সরাসরি উত্তর না চেয়ে ইঙ্গিত চান।</p></article>
+      <article class="step"><div class="num">৩</div><h3>ভুল শুধরে নিন</h3><p>নিজের উত্তর যাচাই করুন। কোথায় ভুল হয়েছে, কেন হয়েছে এবং কীভাবে ঠিক করবেন তা বোঝার চেষ্টা করুন।</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="wrap">
+    <div class="section-head"><h2>এই কমিউনিটিতে আপনি কী কী পাবেন?</h2><p>নিজের চেষ্টায় পড়াশোনা করার অভ্যাস তৈরি করতে সাহায্যকারী ব্যবহারিক উপকরণ ও নির্দেশিকা।</p></div>
+    <div class="benefit-grid">
+      <article class="benefit"><div class="icon">🗓️</div><h3>Smart Study Ideas</h3><p>পড়ার রুটিন তৈরি, সময়ের সঠিক ব্যবহার এবং নিয়মিত পড়ার অভ্যাস গড়ে তোলার ধারণা।</p></article>
+      <article class="benefit"><div class="icon">📘</div><h3>How-to Articles</h3><p>কঠিন বিষয় সহজে বোঝা, অধ্যায়ের মূল ধারণা খুঁজে বের করা, নোট তৈরি ও পরীক্ষার প্রস্তুতির নির্দেশিকা।</p></article>
+      <article class="benefit"><div class="icon">💬</div><h3>Ready-to-Use AI Prompts</h3><p>বিষয় বুঝতে, প্রশ্ন করতে এবং পড়াশোনার কাজে ChatGPT-কে ব্যবহার করতে তৈরি Prompt।</p></article>
+      <article class="benefit"><div class="icon">✍️</div><h3>Practice Prompts</h3><p>নিজের পড়া থেকে প্রশ্ন তৈরি, উত্তর লেখা, অঙ্ক অনুশীলন এবং প্রস্তুতি যাচাইয়ের Prompt।</p></article>
+      <article class="benefit"><div class="icon">🎯</div><h3>Mistake Correction</h3><p>নিজের ভুল খুঁজে বের করা, ভুলের কারণ বোঝা এবং সংশোধনের কৌশল শেখার সহায়তা।</p></article>
+      <article class="benefit"><div class="icon">📈</div><h3>Self-Learning Resources</h3><p>নিজের শেখার অগ্রগতি বুঝতে, নিয়মিত অনুশীলন করতে ও আত্মবিশ্বাস বাড়াতে সাহায্যকারী রিসোর্স।</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="contrast">
+  <div class="wrap">
+    <div class="section-head"><h2>এই পদ্ধতিটা অন্যরকম কেন?</h2><p>ChatGPT-কে আপনার হয়ে কাজ করানোর বদলে, নিজের শেখার কাজে সহায়ক হিসেবে ব্যবহার করুন।</p></div>
+    <table class="compare">
+      <thead><tr><th>সাধারণভাবে</th><th>আমাদের শেখার পদ্ধতিতে</th></tr></thead>
+      <tbody>
+        <tr><td>উত্তর মুখস্থ করা</td><td>উত্তর বুঝে নেওয়া</td></tr>
+        <tr><td>অঙ্কের সমাধান দেখে নেওয়া</td><td>নিজে অঙ্ক করার চেষ্টা</td></tr>
+        <tr><td>ভুল হলে মন খারাপ করা</td><td>ভুলের কারণ খুঁজে বের করা</td></tr>
+        <tr><td>না বুঝলে পড়া ছেড়ে দেওয়া</td><td>অন্যভাবে বুঝে নেওয়ার চেষ্টা</td></tr>
+        <tr><td>অন্যের উপর নির্ভর করা</td><td>নিজের উপর ভরসা তৈরি করা</td></tr>
+      </tbody>
+    </table>
+    <p style="text-align:center;font-weight:800;font-size:18px;margin:28px auto 0;max-width:850px">আমাদের লক্ষ্য ChatGPT-র উপর নির্ভরশীল ছাত্রছাত্রী তৈরি করা নয়। বরং ChatGPT-কে কাজে লাগিয়ে নিজেরাই শিখতে পারে—এমন ছাত্রছাত্রী তৈরি করতে সাহায্য করা।</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>এই কমিউনিটি কাদের জন্য?</h2><p>পশ্চিমবঙ্গের বাংলা মাধ্যমের স্কুলপড়ুয়া ছাত্রছাত্রীদের কথা ভেবেই এই কমিউনিটি তৈরি।</p></div>
+    <div class="audience">
+      <article class="audience-card"><h3>আপনার জন্য, যদি আপনি—</h3><ul><li>Class 8, 9 বা 10-এ পড়েন;</li><li>পড়াশোনায় আরও ভালো করতে চান;</li><li>কঠিন বিষয় নিজের চেষ্টায় বুঝতে শিখতে চান;</li><li>ChatGPT-কে পড়াশোনার কাজে ব্যবহার করতে চান;</li><li>নিজের পড়ার দায়িত্ব নিজে নিতে চান।</li></ul></article>
+      <article class="audience-card"><h3>আপনার জন্য নয়, যদি আপনি—</h3><ul><li>ChatGPT-কে দিয়ে সব হোমওয়ার্ক করাতে চান;</li><li>নিজে কোনও অনুশীলন করতে চান না;</li><li>শুধু পরীক্ষায় নম্বর বাড়ানোর শর্টকাট খুঁজছেন;</li><li>নিয়মিত শেখার চেষ্টা করতে রাজি নন।</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="membership">
+  <div class="wrap">
+    <div class="offer-box">
+      <span class="eyebrow">Lifetime Membership</span>
+      <h2>নিজের পড়া নিজে শিখুন</h2>
+      <div class="old" style="color:#d4dce3">₹৪৯৯</div>
+      <div class="offer-price">₹১৯৯</div>
+      <p>একবারই পেমেন্ট। বারবার কোনও মাসিক ফি দিতে হবে না।</p>
+      <div class="offer-list"><span>✓ শেখার উপকরণ ও রিসোর্স</span><span>✓ Ready-to-Use AI Prompts</span><span>✓ Private Facebook Group</span></div>
+      <a class="cta" href="https://spm.graphy.com/single-checkout/6afbde976251f3d9cf9b521c?pid=p1" target="_blank" rel="noopener noreferrer">সদস্যপদ নিন — ₹১৯৯</a>
+      <p class="micro" style="color:#d4dce3">কমিউনিটি ও পরিষেবা চালু থাকা পর্যন্ত Lifetime Membership প্রযোজ্য।</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>সদস্য হবেন কীভাবে?</h2><p>পেমেন্ট থেকে Private Facebook Group-এ যোগ দেওয়া পর্যন্ত প্রক্রিয়াটি সহজ।</p></div>
+    <div class="join">
+      <div class="join-item"><b>১</b><div>₹১৯৯ পেমেন্ট করে সদস্যপদ নিন।</div></div>
+      <div class="join-item"><b>২</b><div>পেমেন্ট সফল হলে Course-এর Welcome Lesson দেখতে পাবেন।</div></div>
+      <div class="join-item"><b>৩</b><div>Welcome Lesson-এ দেওয়া নির্দেশ অনুসরণ করে Private Facebook Group-এ যোগ দেওয়ার আবেদন করুন।</div></div>
+      <div class="join-item"><b>৪</b><div>আপনার পেমেন্ট যাচাই করার পর ম্যানুয়ালি Group Membership অনুমোদন করা হবে।</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="section-head"><h2>কিছু সাধারণ প্রশ্ন</h2><p>সদস্য হওয়ার আগে যে বিষয়গুলি জানা দরকার।</p></div>
+    <details><summary>সদস্য হতে কত টাকা লাগবে?</summary><p>এককালীন ₹১৯৯ পেমেন্ট করলেই Lifetime Membership পাবেন। কোনও মাসিক ফি নেই।</p></details>
+    <details><summary>পেমেন্ট করলেই কি সঙ্গে সঙ্গে Facebook Group-এ ঢুকতে পারব?</summary><p>পেমেন্ট সফল হলে Welcome Lesson দেখতে পাবেন। সেখানে দেওয়া নির্দেশ অনুযায়ী Group-এ যোগ দেওয়ার আবেদন করতে হবে। পেমেন্ট যাচাইয়ের পর ম্যানুয়ালি অনুমোদন দেওয়া হবে।</p></details>
+    <details><summary>ChatGPT ব্যবহার করতে কি আগে থেকে অভিজ্ঞতা দরকার?</summary><p>না। কমিউনিটির How-to Articles ও Ready-to-Use Prompts আপনাকে ধাপে ধাপে ChatGPT-কে পড়াশোনার কাজে ব্যবহার করতে সাহায্য করবে।</p></details>
+    <details><summary>ChatGPT কি আমার হয়ে পড়াশোনা করবে?</summary><p>না। ChatGPT-কে শেখার সহায়ক হিসেবে ব্যবহার করা হবে। বুঝে পড়া, অনুশীলন করা এবং নিজের ভুল শুধরে নেওয়ার কাজটি আপনাকেই করতে হবে।</p></details>
+    <details><summary>অভিভাবকরা কি বিষয়টি জানতে পারবেন?</summary><p>অবশ্যই। এই কমিউনিটির উদ্দেশ্য ছাত্রছাত্রীদের নিজে শেখার অভ্যাস তৈরি করতে সাহায্য করা। অপ্রাপ্তবয়স্ক সদস্যদের ক্ষেত্রে অভিভাবকের সহযোগিতা ও সম্মতি থাকা উচিত।</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>একদিন কঠিন প্রশ্নের সামনে দাঁড়িয়ে আপনিও বলতে পারবেন—</h2>
+    <p class="quote">“হ্যাঁ, এটা আমি নিজেই পারব!”</p>
+    <p>আজ থেকেই শুরু হোক নিজের পড়া নিজে শেখার অভ্যাস। কারণ, নিজের পড়া নিজে পারার আনন্দটাই আলাদা!</p>
+    <a class="cta" href="https://spm.graphy.com/single-checkout/6afbde976251f3d9cf9b521c?pid=p1" target="_blank" rel="noopener noreferrer">আজই সদস্যপদ নিন — ₹১৯৯</a>
+    <div class="micro">এককালীন পেমেন্ট · Lifetime Membership</div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">© Self-Study Community · পশ্চিমবঙ্গের বাংলা মাধ্যমের ছাত্রছাত্রীদের জন্য<br><span>ChatGPT-কে শেখার সহায়ক হিসেবে ব্যবহার করুন—নিজে শেখার দায়িত্ব নিজের হাতে রাখুন।</span></div></footer>
+</body>
+</html>
